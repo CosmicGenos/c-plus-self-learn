@@ -11,10 +11,13 @@ int main()
 	
 	/*cout << "Hello, World!" << endl;*/
 
-	char* str = new char[100];
-	cout << "Enter your favorite color: ";
-	cin.getline(str, 100);
-	ask_user_input_color(str);
+	char* str1 = new char[100];
+	char* str2 = new char[100];
+	cout << "Enter your Frist Name: ";
+	cin.getline(str1, 100);
+	cout << "Enter your Last Name: ";
+	cin.getline(str2, 100);
+	cout << "Hello, " << str1 << " " << str2 << endl;
 
 	return 0;
 	

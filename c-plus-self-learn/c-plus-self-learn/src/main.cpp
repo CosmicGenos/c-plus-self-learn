@@ -13,7 +13,7 @@ int main()
 
 	char* str = new char[100];
 	cout << "Enter your favorite color: ";
-	std::cin.getline(str, 100);
+	cin.getline(str, 100);
 	ask_user_input_color(str);
 
 	return 0;

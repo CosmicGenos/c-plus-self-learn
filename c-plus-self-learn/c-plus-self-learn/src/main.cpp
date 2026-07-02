@@ -34,6 +34,25 @@ int main()
 	switch_1(a, b);
 	cout << "After switch: a = " << a << ", b = " << b << endl;
 
+	int rating = 5;
+
+	if (rating == 5)
+	{
+		cout << "You are a great player!" << endl;
+	}
+	else if (rating == 4)
+	{
+		cout << "You are a good player!" << endl;
+	}
+	else if (rating == 3)
+	{
+		cout << "You are an average player!" << endl;
+	}
+	else
+	{
+		cout << "You are a bad player!" << endl;
+	}
+
 	return 0;
 	
 }

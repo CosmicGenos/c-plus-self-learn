@@ -5,7 +5,7 @@ struct AuthResult {
 	int index ;
 };
 
-AuthResult Authentication(char** UseName, char** password);
+AuthResult Authentication(char** UserName, char** Password, char* name, char* password);
 
 
 int main() {
@@ -46,6 +46,11 @@ int main() {
 			else {
 				cout << "Invalid username or password." << endl;
 			}
+			break;
+		}
+		case 2:
+		{
+			char *username = 
 		}
 		break;
 		}

@@ -1,87 +1,82 @@
 #include <iostream>
+using namename space std;
+struct AuthResult {
+	bool success ;
+	int index ;
+};
 
-using namespace std;
-void ask_user_input_color(char* color);
-void switch_1(int& p, int& q);
+AuthResult Authentication(char** UseName, char** password);
 
-// namespace not that complictated , its like using function inside a class,
-// but in this case we are using function inside a namespace, so we can use the function without using namespace name
 
-int main()
-{
-	
-	/*cout << "Hello, World!" << endl;*/
+int main() {
 
-	char* str1 = new char[100];
-	char* str2 = new char[100];
-	cout << "Enter your Frist Name: ";
-	cin.getline(str1, 100);
-	cout << "Enter your Last Name: ";
-	cin.getline(str2, 100);
-	cout << "Hello, " << str1 << " " << str2 << endl;
+	char** username = new char* [10];
+	char** password = new char* [10];
+	char** role = new char* [10];
+	int userCount = 0;
+	int already_logged_in[10];
 
-	int** p;
-	int rows = 3;
-	int* cols = new int[rows];
-	p = &cols;
-
-	cout << p << endl;
-
-	int a = 10;
-	int b = 20;
-
-	cout << "Before switch: a = " << a << ", b = " << b << endl;
-	switch_1(a, b);
-	cout << "After switch: a = " << a << ", b = " << b << endl;
-
-	int rating = 5;
-
-	if (rating == 5)
+	while (1)
 	{
-		cout << "You are a great player!" << endl;
-	}
-	else if (rating == 4)
-	{
-		cout << "You are a good player!" << endl;
-	}
-	else if (rating == 3)
-	{
-		cout << "You are an average player!" << endl;
-	}
-	else
-	{
-		cout << "You are a bad player!" << endl;
+		cout << "Enter 1 for Login" << endl;
+		cout << "Enter 2 for Register" << endl;
+		cout << "Enter 3 for exit" << endl;
+
+		int choice;
+		cin.getline(cin, choice);
+
+		switch (choice) {
+		case 1:
+		{
+			char name[50];
+			char password[50];
+
+			cout << "Enter username: ";
+			cin.getline(name, 50);
+
+			cout << "Enter password: ";
+			cin.getline(password, 50);
+
+			AuthResult result = Authentication(username, password, name, password);
+
+			if (result.success) {
+				cout << "Login successful!" << endl;
+				already_logged_in[result.index] = 1;
+			}
+			else {
+				cout << "Invalid username or password." << endl;
+			}
+		}
+		break;
+		}
+
+
+		
 	}
 
 	return 0;
-	
 }
 
-//#include <cstdio>
-//using namespace std;
-//
-//int main()
-//{
-//	puts("Click on Button");
-//	puts("Create a new player");
-//	puts("Add life to player");
-//	return 0;
-//}
-
-
-char is_char(char c)
+AuthResult Authentication(char** UserName, char** Password,char *name, char *password )
 {
-	return c; 
-}
+	bool success = false;
+	int index = -1;
+	for (int i = 0; i < 10; i++)
+	{
+		if (strcmp(UserName[i], name) == 0 && strcmp(Password[i], password) == 0)
+		{
+			success = true;
+			index = i;
+		}
+	}
 
-void ask_user_input_color(char* color)
-{
-	std::cout << "Hey my favorite color also " << color << "\n";
-}
+	if (success)
+	{
+		return { true, index };
+	}
+	else
+	{
+		return { false, -1 };
+	}
 
-void switch_1 (int &p, int &q )
-{
-	int temp = p;
-	p = q;
-	q = temp;
 }

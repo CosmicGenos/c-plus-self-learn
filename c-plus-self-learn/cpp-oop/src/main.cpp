@@ -50,7 +50,15 @@ class Point {
 		{
 			this->x = x;
 		}
-	
+		
+		static void print_points(const std::vector<Point>& point)
+		{
+			for (const auto& p : point) {
+				p.display();
+			}
+		}
+
+
 };
 
 int main()
@@ -71,7 +79,7 @@ int main()
 
 	p1.display();
 
-	for (auto& point : points) {
+ 	for (auto& point : points) {
 		double distance = point.distanceTo(p1);
 		cout << "Distance from Point(" << point.getX() <<", " << point.getY()<<") to Point(" << p1.getY() << ", " << p1.getY() << ") is: " << distance << endl;
 	}
@@ -80,6 +88,8 @@ int main()
 		point.setX(point.getX() + 1);
 		point.setY(point.getY() + 1);
 	}
+
+	Point::print_points(points);
 
 
 

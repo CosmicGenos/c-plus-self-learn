@@ -1,2 +1,31 @@
 ﻿  main.cpp
-  c-plus-self-learn.vcxproj -> D:\c-plus-self-learn\c-plus-self-learn\bin\x64\Debug\c-plus-self-learn.exe
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(2,7): error C2065: 'namename': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(2,7): error C2187: syntax error: 'namename' was unexpected here
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(2,16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(2,22): error C2146: syntax error: missing ';' before identifier 'std'
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(21,3): error C2065: 'cout': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(21,34): error C2065: 'endl': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(22,3): error C2065: 'cout': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(22,37): error C2065: 'endl': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(23,3): error C2065: 'cout': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(23,33): error C2065: 'endl': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(26,3): error C2065: 'cin': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(26,15): error C2065: 'cin': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(34,4): error C2065: 'cout': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(35,4): error C2065: 'cin': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(37,4): error C2065: 'cout': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(38,4): error C2065: 'cin': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(40,24): error C2664: 'AuthResult Authentication(char **,char **,char *,char *)': cannot convert argument 2 from 'char [50]' to 'char **'
+      D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(40,49):
+      Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+      D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(8,12):
+      see declaration of 'Authentication'
+      D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(40,24):
+      while trying to match the argument list '(char **, char [50], char [50], char [50])'
+  
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(43,5): error C2065: 'cout': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(43,36): error C2065: 'endl': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(47,5): error C2065: 'cout': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(47,48): error C2065: 'endl': undeclared identifier
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(54,3): error C2059: syntax error: '}'
+D:\c-plus-self-learn\c-plus-self-learn\c-plus-self-learn\src\main.cpp(54,3): error C2143: syntax error: missing ';' before '}'

@@ -51,15 +51,25 @@ class Point {
 			this->x = x;
 		}
 		
-		static void print_points(const std::vector<Point>& point)
+		static void print_points(std::vector<Point> &point)
 		{
-			for (const auto& p : point) {
+			for ( auto& p : point) {
 				p.display();
 			}
 		}
 
 
 };
+
+class City {
+	Point location;
+	char* name;
+	int population;
+
+
+};
+
+
 
 int main()
 {

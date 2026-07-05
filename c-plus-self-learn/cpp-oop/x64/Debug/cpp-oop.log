@@ -1,13 +1,2 @@
 ﻿  main.cpp
-D:\c-plus-self-learn\c-plus-self-learn\cpp-oop\src\main.cpp(57,7): error C2662: 'void Point::display(void)': cannot convert 'this' pointer from 'const _Ty' to 'Point &'
-D:\c-plus-self-learn\c-plus-self-learn\cpp-oop\src\main.cpp(57,7): error C2662:         with
-D:\c-plus-self-learn\c-plus-self-learn\cpp-oop\src\main.cpp(57,7): error C2662:         [
-D:\c-plus-self-learn\c-plus-self-learn\cpp-oop\src\main.cpp(57,7): error C2662:             _Ty=Point
-D:\c-plus-self-learn\c-plus-self-learn\cpp-oop\src\main.cpp(57,7): error C2662:         ]
-      D:\c-plus-self-learn\c-plus-self-learn\cpp-oop\src\main.cpp(57,5):
-      Conversion loses qualifiers
-      D:\c-plus-self-learn\c-plus-self-learn\cpp-oop\src\main.cpp(27,8):
-      see declaration of 'Point::display'
-      D:\c-plus-self-learn\c-plus-self-learn\cpp-oop\src\main.cpp(57,7):
-      while trying to match the argument list '()'
-  
+  cpp-oop.vcxproj -> D:\c-plus-self-learn\c-plus-self-learn\x64\Debug\cpp-oop.exe

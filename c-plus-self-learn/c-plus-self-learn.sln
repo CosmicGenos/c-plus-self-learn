@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "c-plus-self-learn", "c-plus
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-oop", "cpp-oop\cpp-oop.vcxproj", "{A1378C1E-EC51-4E95-8FD3-910FC91A7B04}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeoMath", "GeoMath\GeoMath.vcxproj", "{0267D8D7-1AC1-4E7C-A7B0-65B2B9C90C94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{A1378C1E-EC51-4E95-8FD3-910FC91A7B04}.Release|x64.Build.0 = Release|x64
 		{A1378C1E-EC51-4E95-8FD3-910FC91A7B04}.Release|x86.ActiveCfg = Release|Win32
 		{A1378C1E-EC51-4E95-8FD3-910FC91A7B04}.Release|x86.Build.0 = Release|Win32
+		{0267D8D7-1AC1-4E7C-A7B0-65B2B9C90C94}.Debug|x64.ActiveCfg = Debug|x64
+		{0267D8D7-1AC1-4E7C-A7B0-65B2B9C90C94}.Debug|x64.Build.0 = Debug|x64
+		{0267D8D7-1AC1-4E7C-A7B0-65B2B9C90C94}.Debug|x86.ActiveCfg = Debug|Win32
+		{0267D8D7-1AC1-4E7C-A7B0-65B2B9C90C94}.Debug|x86.Build.0 = Debug|Win32
+		{0267D8D7-1AC1-4E7C-A7B0-65B2B9C90C94}.Release|x64.ActiveCfg = Release|x64
+		{0267D8D7-1AC1-4E7C-A7B0-65B2B9C90C94}.Release|x64.Build.0 = Release|x64
+		{0267D8D7-1AC1-4E7C-A7B0-65B2B9C90C94}.Release|x86.ActiveCfg = Release|Win32
+		{0267D8D7-1AC1-4E7C-A7B0-65B2B9C90C94}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

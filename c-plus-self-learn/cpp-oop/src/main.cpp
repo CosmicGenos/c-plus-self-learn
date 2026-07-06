@@ -69,6 +69,12 @@ class City {
 
 };
 
+class Simple
+{
+public:
+	int x;
+
+};
 
 
 int main()
@@ -101,7 +107,13 @@ int main()
 
 	Point::print_points(points);
 
+	Simple s;
+	Simple sq;
 
+	s = sq;
+
+	cout << "s.x: " << s.x << endl;
+	cout << "sq.x: " << sq.x << endl; 
 
 	return 0;
 }

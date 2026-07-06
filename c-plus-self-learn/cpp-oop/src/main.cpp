@@ -65,7 +65,7 @@ class City {
 	Point location;
 	char* name;
 	int population;
-
+	 
 
 };
 

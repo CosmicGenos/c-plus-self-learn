@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <fstream>
 using namespace std;
 
 
@@ -70,10 +71,49 @@ class City {
 };
 
 class Simple
-{
+{ 
+
 public:
 	int x;
 
+	Simple()
+	{
+		x = 0;
+	}
+
+};
+
+class Heap
+{
+public:
+	Simple* s = new Simple();
+
+	Heap()
+	{
+		s->x = 10;
+	}
+};
+
+class BasicNumber
+{
+public:
+	int num;
+
+	BasicNumber()
+	{
+		num = 0;
+	}
+
+	BasicNumber(int n)
+	{
+		num = n;
+	}
+
+	BasicNumber(const BasicNumber& other)
+	{
+		num = other.num;
+		cout << "Copy constructor called for BasicNumber with value: " << num << endl;
+	}
 };
 
 
@@ -110,10 +150,31 @@ int main()
 	Simple s;
 	Simple sq;
 
+	s.x = 5;
+	sq.x = 10;
+
 	s = sq;
 
 	cout << "s.x: " << s.x << endl;
-	cout << "sq.x: " << sq.x << endl; 
+	cout << "sq.x: " << sq.x << endl;	
+
+	Heap h1;
+	Heap h2;
+
+	cout << "h1.s->x: " << h1.s->x << endl;
+	cout << "h2.s->x: " << h2.s->x << endl;
+
+	h2.s->x = 20;
+
+	h1 = h2;
+
+	cout << "h1.s->x: " << h1.s->x << endl;
+	cout << "h2.s->x: " << h2.s->x << endl;
+
+	BasicNumber num(4);
+	BasicNumber num2 = num;
+
+	
 
 	return 0;
 }

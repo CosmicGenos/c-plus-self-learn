@@ -59,7 +59,11 @@ class Point {
 			}
 		}
 
-
+		Point operator+(const Point &pA)
+		{
+			return Point(this->x + pA.getX(), this->y + pA.getY());
+		}
+		
 };
 
 class City {
@@ -173,6 +177,12 @@ int main()
 
 	BasicNumber num(4);
 	BasicNumber num2 = num;
+
+	Point p3(1, 2);
+	Point p2(123, 345);
+	Point c = p1 + p3;
+
+	c.display();
 
 	
 

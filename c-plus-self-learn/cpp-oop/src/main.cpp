@@ -63,7 +63,15 @@ class Point {
 		{
 			return Point(this->x + pA.getX(), this->y + pA.getY());
 		}
-		
+
+		bool operator==(const Point& re)
+		{
+			if (this->x == re.getX() && this->y == re.getY())
+			{
+				return true;
+			}
+			return false;
+		}
 };
 
 class City {
@@ -124,7 +132,7 @@ public:
 int main()
 {
 	std::vector<Point> points = {
-		{1, 2},
+ 		{1, 2},
 		{3, 4},
 		{5, 6}
 	};
@@ -184,7 +192,8 @@ int main()
 
 	c.display();
 
-	
+	if (p1 == p2) cout << "p1 and p2 are equal" << endl;
+	else cout << "p1 and p2 are not equal" << endl;
 
 	return 0;
 }

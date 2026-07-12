@@ -64,10 +64,34 @@ class Rectangle{
             cout<<"width: "<<this->width<<endl;
             cout<<"height: "<<this->height<<endl;
         }
+};
+
+
+class Student {
+
+    char *name;
+    int start_year;
+    int grad_year;
+
+    public:
+        //member init must be same as declaretion
+        Student(char *name, int start_year,int grad_year) : name(name),start_year(start_year), grad_year(grad_year) {
+            cout<<"Student constructor"<<endl;
+        }
+
+        Student(char *name, int start_year): name(name),start_year(start_year),grad_year(start_year + 4) {
+            cout<<"Student constructor with 2 param"<<endl;
+        }
+
+        void print() {
+            cout<<"Student print"<<endl;
+            cout<<"name: "<<name<<endl;
+            cout<<"start_year: "<<start_year<<endl;
+            cout<<"grad_year: "<<grad_year<<endl;
+        }
 
 
 };
-
 
 
 
@@ -84,6 +108,9 @@ int main() {
     Rectangle rect2(2,4);
     rect1.print().print2();
 
+    Student student1("Kavindu", 2021);
+
+    student1.print();
 
     return 0;
 } 
